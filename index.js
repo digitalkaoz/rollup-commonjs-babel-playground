@@ -1,6 +1,6 @@
-import {rollup} from 'rollup';
+import { rollup } from "rollup";
 
-import CONFIG from './rollup.config.js';
+import CONFIG from "./rollup.config.js";
 
 const build = async () => {
     const bundle = await rollup({input : CONFIG.input});

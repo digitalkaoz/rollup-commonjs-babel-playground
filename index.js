@@ -12,4 +12,4 @@ const build = async () => {
     return await bundle.write(CONFIG.output);
 }
 
-export default build
+export default build;

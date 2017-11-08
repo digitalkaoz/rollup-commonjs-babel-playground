@@ -3,7 +3,7 @@ import { rollup } from "rollup";
 import CONFIG from "./rollup.config.js";
 
 /**
- * build
+ * awesome build
  */
 const build = async () => {
     const bundle = await rollup({input : CONFIG.input});

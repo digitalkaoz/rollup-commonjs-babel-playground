@@ -1,16 +1,21 @@
 {
-  "name": "git_workshop",
+  "name": "example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/rollup -c",
     "start": "node --debug bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rollup": "^0.50.0"
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "rollup": "^0.50.1",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
   }
 }

@@ -1,6 +1,7 @@
 module.exports = {
     plugins: [
-        "transform-object-rest-spread"
+        "transform-object-rest-spread",
+        "@babel/plugin-external-helpers"
     ],
     presets: [
       [
@@ -10,7 +11,7 @@ module.exports = {
           modules: false,
           useBuiltIns: "usage",
           targets: {
-            browsers: ["last 2 major versions"]
+            browsers: ["safari >= 11"]
           }
         }
       ]

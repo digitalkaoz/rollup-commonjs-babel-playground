@@ -1,3 +1,3 @@
-const foo = require('./foo');
+import foo from './foo';
 
 const b = {...foo};

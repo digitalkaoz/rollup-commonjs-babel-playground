@@ -1,1 +1,1 @@
-module.exports = {a : 'a',b : 'b',c: 'c'};
+export default {a : 'a',b : 'b',c: 'c'};

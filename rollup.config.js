@@ -4,13 +4,13 @@ import babel from "rollup-plugin-babel";
 
 export default {
     input: "index.js",
-    treeshake: false,
     plugins: [
-        babel({
-            extends: __dirname+"/.babelrc.js",
-        }),
         resolve({
             jsnext: true,
+        }),
+        babel({
+            extends: __dirname+"/.babelrc.js",
+            externalHelpers: true
         }),
         commonjs({
         }),
@@ -19,6 +19,12 @@ export default {
         file: "output.js",
         format: "iife",
         name: "example",
-        sourcemap: false
+        sourcemap: false,
+        external: [
+            "@babel/runtime/helpers/extends"
+        ],
+        globals: {
+            "@babel/runtime/helpers/extends": "o_global.extend"
+        }
     }
 };
